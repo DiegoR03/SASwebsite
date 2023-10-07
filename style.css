@@ -1,0 +1,182 @@
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Text Styling */
+p {
+    padding-left: 10px;
+    color:white;
+}
+
+h1, h2 {
+  width: 100%;
+  background-color: gray;
+  padding-top: 3em;
+  padding-bottom: 3em;;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+  padding-top: 1em;;
+  padding-bottom: 1em;;
+  padding-left: 10px;
+}
+
+/* Text styling for the lyrics of the songs */
+pre {
+  white-space:pre-line;
+  font-size: 0.8em;
+  text-align: left;
+  background-color: rgb(41, 41, 41);
+  color:white;
+  padding: 2em;
+}
+
+/* Body stying */
+body, section, main {
+    background-color: #101010;
+    font-size: 1vw;
+}
+
+footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 2em;
+}
+
+/* Video styling and positioning */
+video {
+  position: inherit;
+  width:50%;
+}
+
+/* List box */
+li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-direction:inherit;
+}
+
+/* Photo Centering within an list box */
+li img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1em solid gray;
+}
+
+/* Style of buttons */
+a {
+  background-color: #333;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  transition: all 500ms ease;
+  display: inline-block;
+  overflow: hidden; 
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Change the color on hover of the button */
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+/* Add a color to the current page button */
+a.active {
+  background-color: gray;
+  color: white;
+}
+
+/* Photo Centering */
+.photo-center {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:left;
+}
+
+/* Text Centering */
+.text-center {
+  text-align: center;
+  background-color: gray;
+}
+
+/* Information boxes, met behulp van https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp */
+.infobox {
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 10px;
+  border: 3px solid gray;
+  background-color: gray;
+  margin: 1em;
+  transition: transform .2s;
+}
+
+.infobox:hover {
+  transform: scale(1.055);
+}
+
+/* Puts the info boxes in order */
+.boxorder {
+  padding: 2em;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-direction:inherit;
+  flex-wrap: wrap;
+}
+
+/* Lyrics Page make up */
+.lyrics-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  justify-content: center;
+  padding: 2em
+}
+
+/* Hero Homepage Styling, credit https://www.shecodes.io/athena/11902-creating-homepage-hero-with-html-and-css */
+.hero {
+  background-image: url('images/Banners/CASBanner.jpg');
+  height: 49vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the H1 element within the Hero */
+.h1hero {
+  font-size: 3rem;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Paragraph element within the Hero */
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
